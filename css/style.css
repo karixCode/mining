@@ -23,6 +23,10 @@ main {
   padding: 40px 0 80px;
 }
 
+.main__about {
+  padding-bottom: 80px;
+}
+
 .button {
   display: inline-block;
   padding: 11px 27px;
@@ -204,4 +208,62 @@ main {
   height: 12px;
   margin-left: 10px;
   background: url("../image/categories/Arrow-right_blue.svg") 0 0/100% no-repeat;
+}
+
+.about__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.about__body .about__content .about__text {
+  line-height: 145%;
+  max-width: 645px;
+}
+.about__body .about__content .about__text :first-child {
+  margin-bottom: 30px;
+}
+.about__body .about__image {
+  margin-left: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.1);
+}
+.about__body .about__image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about__advantages .about__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.about__advantages .about__list .about__item-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+.about__advantages .about__list .about__item-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #F0F5FB;
+  border-radius: 50%;
+}
+.about__advantages .about__list .about__item-icon svg {
+  z-index: 10;
+}
+.about__advantages .about__list .about__item-text {
+  max-width: 123px;
+  line-height: 145%;
 }/*# sourceMappingURL=style.css.map */
