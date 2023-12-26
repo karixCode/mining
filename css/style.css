@@ -436,4 +436,67 @@ main section:first-child {
 .contacts_inner .contacts__map iframe {
   width: 100%;
   height: 100%;
+}
+
+.footer {
+  background-color: #18154B;
+}
+.footer .footer__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 75px 0 60px;
+}
+.footer .footer__inner .footer__logo-text {
+  margin-top: 16px;
+  color: #B8B8B8;
+  font-size: 15px;
+}
+.footer .footer__inner .footer__title {
+  color: #B8B8B8;
+  font-weight: 700;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer .footer__inner .footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer .footer__inner .footer__list .footer__item-text {
+  color: #FFF;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+.footer .footer__inner .footer__list .footer__item-text:hover {
+  color: #B8B8B8;
+}
+.footer .footer__inner .footer__col-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer .footer__inner .footer__col-list .footer__button {
+  padding: 15px 39px;
+  background: #FFF;
+  color: #18154B;
+  font-size: 15px;
+  font-weight: 700;
+}
+.footer .footer__inner .footer__col-list .footer__doc-list {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 8px;
+  color: #B8B8B8;
+  font-size: 15px;
+}
+.footer .footer__inner .footer__col-list .footer__doc-list .footer__doc-link {
+  transition: all 0.3s;
+}
+.footer .footer__inner .footer__col-list .footer__doc-list .footer__doc-link:hover {
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */
