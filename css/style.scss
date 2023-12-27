@@ -215,6 +215,110 @@ main {
   }
 }
 
+// ========================================ADVANTAGES=====================================
+// ========================================ADVANTAGES=====================================
+
+.advantages__inner {
+  position: relative;
+  background-color: #180564;
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 284px;
+    height: 284px;
+    border-radius: 50%;
+    background: #3BB9C6;
+    filter: blur(94px);
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    width: 284px;
+    height: 284px;
+    border-radius: 50%;
+    background: #3BB9C6;
+    filter: blur(94px);
+  }
+  .advantages__content {
+    position: relative;
+    padding: 50px 0 55px 60px;
+    display: flex;
+    gap: 80px;
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('../image/advantages/bg.svg');
+      width: 1180px;
+      height: 374px;
+    }
+    .advantages__title {
+      position: relative;
+      color: #FFF;
+      font-size: 36px;
+      font-weight: 800;
+      text-transform: uppercase;
+      z-index: 10;
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -22px;
+        left: -5px;
+        width: 318px;
+        height: 330px;
+        z-index: -1;
+        background: url('../image/advantages/videocard.svg');
+      }
+    }
+    .advantages__list {
+      width: 100%;
+      display: grid;
+      grid-template: repeat(2, auto) / repeat(3, 1fr);
+      gap: 55px 10px;
+      margin-right: 100px;
+      .advantages__icon {
+        position: relative;
+        margin-bottom: 25px;
+        z-index: 10;
+        margin-left: 15px;
+        &::before {
+          content: "";
+          display:block;
+          position: absolute;
+          transform: translate(-25%, -25%);
+          z-index: -1;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: #25307B;
+          box-shadow: (0px 4px 40px rgba(0, 6, 84, 0.90));
+        }
+      }
+      .advantages__item-text {
+        max-width: 170px;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
 // ========================================ABOUT=====================================
 // ========================================ABOUT=====================================
 
@@ -287,10 +391,25 @@ main {
 // ========================================FORM=====================================
 
 .form__inner {
+  position: relative;
   width: 100%;
   height: 330px;
   background: url('../image/form/img.jpg');
   border-radius: 10px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+    display: inline-block;
+    width: 284px;
+    height: 284px;
+    border-radius: 50%;
+    background: #3BB9C6;
+    filter: blur(94px);
+  }
   .form__content {
     width: 100%;
     height: 100%;
